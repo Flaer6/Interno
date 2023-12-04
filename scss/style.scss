@@ -291,8 +291,8 @@ body {
   }
 }
 .sponsors {
-  overflow-x: hidden;
   &__inner {
+    overflow: hidden;
     white-space: nowrap;
     padding-top: 140px;
   }
@@ -300,7 +300,8 @@ body {
     display: flex;
     gap: 0 100px;
     align-items: center;
-    animation: line-sponsor 9s linear infinite;
+    transition: all .5s;
+    animation: line-sponsor 10s linear infinite alternate;
   }
 }
 .projects {
@@ -568,14 +569,8 @@ body {
       display: none;
     }
   }
-  .sponsors {
-    &__inner {
-      padding-top: 100px;
-    }
-    &__box {
-      animation-name: line-sponsor-mobile;
-    }
-  }
+}
+ 
   .advantages {
   	padding: 60px 0;
   	&__list {
@@ -593,7 +588,7 @@ body {
     }
   }
   }
-}
+
 @media (max-width: 925px) {
   .design {
     &__title {
@@ -728,17 +723,9 @@ body {
 
 @keyframes line-sponsor {
   0% {
+    transform: translateX(0);
+  }
+  100% {
     transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(110vw);
-  }
-}
-@keyframes line-sponsor-mobile {
-  0% {
-    transform: translateX(-150vw);
-  }
-  100% {
-    transform: translateX(110vw);
   }
 }

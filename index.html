@@ -9,8 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap"
       rel="stylesheet"
     />
-    <title>Interno</title>
+    <!--     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/> -->
     <link rel="stylesheet" href="css/style.min.css" />
+    <title>Interno</title>
   </head>
   <body>
     <header class="header">
@@ -233,26 +237,30 @@
       </section>
       <section class="sponsors">
         <div class="container">
-          <div class="sponsors__inner">
-            <div class="sponsors__box">
+          <div class="sponsors__inner swiper">
+            <div class="sponsors__box swiper-wrapper">
               <img
-                class="sponsors__logo"
+                class="sponsors__logo swiper-slide"
                 src="images/logo-1.svg"
                 alt="Modern Home"
               />
               <img
-                class="sponsors__logo"
+                class="sponsors__logo swiper-slide"
                 src="images/logo-2.svg"
                 alt="Stylevintage Interior"
               />
-              <img class="sponsors__logo" src="images/logo-3.svg" alt="Brand" />
               <img
-                class="sponsors__logo"
+                class="sponsors__logo swiper-slide"
+                src="images/logo-3.svg"
+                alt="Brand"
+              />
+              <img
+                class="sponsors__logo swiper-slide"
                 src="images/logo-4.svg"
                 alt="Nature Home"
               />
               <img
-                class="sponsors__logo"
+                class="sponsors__logo swiper-slide"
                 src="images/logo-5.svg"
                 alt="Classic Design Studio"
               />
@@ -572,13 +580,11 @@
         </span>
       </div>
     </div>
-    <script>
-      const menuBtn = document.querySelector(".menu__btn");
-      const menuMobile = document.querySelector(".menu__mobile");
-      menuBtn.addEventListener("click", () => {
-        menuMobile.classList.toggle("menu--open");
-        menuBtn.classList.toggle("menu--click");
-      });
+    <!--    <script
+   src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+ ></script> -->
+    <script src="js/main.js"
+    >
     </script>
   </body>
 </html>
